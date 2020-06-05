@@ -16,7 +16,6 @@ class OrderPage extends Component{
         }
     }
     componentDidMount(){
-        console.log('Mounted');
         fetch('https://indapi.kumba.io/webdev/assignment',{mode:'cors'})
         .then(response => response.json())
         .then(apiData => this.setState({data:apiData}))

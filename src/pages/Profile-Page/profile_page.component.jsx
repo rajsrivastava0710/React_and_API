@@ -11,7 +11,6 @@ class ProfilePage extends Component{
         }
     }
     componentDidMount(){
-        console.log('Mounted');
         fetch('https://indapi.kumba.io/webdev/assignment',{mode:'cors'})
         .then(response => response.json())
         .then(apiData => this.setState({data:apiData}))
@@ -23,13 +22,11 @@ class ProfilePage extends Component{
         return(
         <div className = 'profile-page-container'>        
         {
-        user && Object.keys(user).length>0?
-        <UserDetails key = { user.id } user = { user }/>
-        :
-        null
+            user && Object.keys(user).length>0?
+            <UserDetails key = { user.id } user = { user }/>
+            :
+            null
         }
-
-
         </div>
         )
     }
