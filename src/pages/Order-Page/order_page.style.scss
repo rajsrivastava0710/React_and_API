@@ -1,0 +1,64 @@
+div{
+    &.order-page-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .order-id{
+            margin: 25px;
+            font-size: 1.7rem;
+            font-family: cursive;
+        }
+        .orders-list-container{
+            width: 80%;
+            min-width: 460px;
+           .single-order-detail-container-header{
+               display: flex;
+               justify-content: space-around;
+               font-size: 1.3rem;
+               font-weight: 800;
+               padding: 15px 0;
+               border-bottom: 3px solid black;
+               &>div{
+                width: 18%;
+                &:last-of-type{
+                    width: 10%;
+                }
+                }
+           }
+
+        }
+        .total-counts-container{
+            margin-top: 39px;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div{
+                width: 40%;
+                text-align: center;
+                font-size: 1.3rem;
+                margin: 20px 2px;
+            }
+        }
+        .restaurant-details-container{
+            align-items: center;
+            display: flex;
+            width: 80%;
+            margin: 20px;
+            flex-direction: column;
+           
+            .heading{
+                font-size: 1.9rem;
+                color: blue;
+                font-family: cursive;
+                padding: 5px;
+                border-bottom: 2px solid black;
+                margin-bottom: 15px;
+            }
+            .details{
+                font-family: monospace;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

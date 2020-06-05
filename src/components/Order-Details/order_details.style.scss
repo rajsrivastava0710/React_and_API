@@ -1,0 +1,28 @@
+div{
+    &.single-order-detail-container{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #ac8181;;
+    padding: 10px 0;
+    font-weight: 600;
+    &>div{
+        width: 18%;
+        &.quantity{
+            position: relative;
+            left: 30px;
+        }
+        &.category{
+            position: relative;
+            left: 12px;
+        }
+        &.price{
+            position: relative;
+            left:6px;
+        }
+        &:last-of-type{
+            width: 10%;
+        }
+    }
+    }
+}

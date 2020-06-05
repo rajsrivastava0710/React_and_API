@@ -1,0 +1,24 @@
+div{
+    box-sizing: border-box;
+    &.navbar{
+        display: flex;
+        background: darkturquoise;
+        height: 74px;
+        justify-content: space-around;
+        font-weight: 600;
+        font-size: 30px;
+        &>div{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            padding: 4px 12px;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                background: #8fe58f;
+            }
+            a{
+                color: black;
+            }
+        }
+    }
+}
